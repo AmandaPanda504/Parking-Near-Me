@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  	<title>Parking Search</title>
+    <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF_GMDPbA_Z27iuSaPl8CETbts0D-AAGU&libraries=places&callback=initialize" async defer></script>
+    <script src="https://kit.fontawesome.com/9c7a22b50a.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    
+    <header role ="banner" class="title"><h1></h1>
+      <h1> Find Parking Near to Your Destination </h1>
+    </header>
+
+    <section role="region" class= "searchBar">
+      <strong>Destination</strong>
+      <input type="text" name="address" id="address">  
+      <button class="button" id="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </section>
+
+
+    <main role="main" aria-live="assertive">
+    <div class="map" id="map"></div>
+    <div class="wrapper">
+    <ol class="list"><h1 class="message"></h1></ol>
+    </div>
+    </main>
+
+
+  </body>
+</html>
